@@ -1,0 +1,25 @@
+body {
+    font-family: 'Heebo', sans-serif;
+}
+
+.container {
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+}
+
+.vl {
+    border-left: 1px solid black;
+    height: 8rem;
+}
+
+h2 {
+    margin-bottom: 2rem;
+}
+
+.col-1 {
+    max-width: 0%;
+}
