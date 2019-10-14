@@ -1,11 +1,43 @@
-body {
+body,
+html {
+    height: 100%;
+}
+
+.background {
+    /* The image used */
+    background-image: url("../images/questions.png");
+
+    /* Full height */
+    height: 100%;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+body,
+.text-muted {
     font-family: 'Heebo', sans-serif;
 }
 
-.container {
+.text-muted {
+    color: gray;
+}
 
+.col-12 {
+    max-width: 100%;
+    margin-bottom: 1rem;
+}
+
+#title {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+    width: 100%;
     position: absolute;
-    top: 50%;
+    top: 45%;
     left: 50%;
     margin-right: -50%;
     transform: translate(-50%, -50%)
@@ -14,12 +46,19 @@ body {
 .vl {
     border-left: 1px solid black;
     height: 8rem;
+    max-width: 0%;
+    padding-right: 0;
 }
 
 h2 {
     margin-bottom: 2rem;
 }
 
-.col-1 {
-    max-width: 0%;
+#timer {
+    line-height: .9;
+}
+
+.btn {
+    margin-right: 1rem;
+    margin-bottom: 1rem;
 }
