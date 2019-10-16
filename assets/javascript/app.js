@@ -206,6 +206,14 @@ $(document).ready(function() {
 
         correctAnswers = 0;
         wrongAnswers = 0;
+      } else if (wrongAnswers + correctAnswers !== qCount && timer === -1) {
+        stop();
+        $("#timer").html("90");
+        $("#questions").empty();
+        $("#questions").html("<h3>Game Over!  Here's how you did: </h3>");
+        $("#choices").append("<h4> Correct: " + correctAnswers + "</h4>");
+        $("#choices").append("<h4> Incorrect: " + wrongAnswers + "</h4>");
+        $("#choices").append(playAgain);
       } else {
         runTimer();
         showQuestion();
